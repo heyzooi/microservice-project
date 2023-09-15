@@ -18,7 +18,7 @@ name = "health-check"
 path = "src/health-check-service/main.rs"
 
 [dependencies]
-clap = "4.4.2"
+clap = { version = "4.4.2", features = ["derive"] }
 pbkdf2 = { version = "0.12.2", features = ["simple"] }
 prost = "0.12.0"
 rand_core = "0.6.4"
